@@ -78,7 +78,7 @@ async def account_login(bot: Client, m: Message):
     await input1.delete(True)
 
     response = requests.post(url=url, headers=headers, json=data, verify=True)
-    data = response.json()
+    data = json.loads(html)
     token = data["data"]["token"]
     await editable.edit("**login Successful**")
     #await editable.edit(f"You have these Batches :-\n{raw_text}")
