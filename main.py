@@ -40,13 +40,12 @@ logger = logging.getLogger()
 
 @bot.on_message(filters.command(["start"]))
 async def start(bot, update):
-       await update.reply_text("Hi i am **ℂ𝕒𝕣𝕖𝕖𝕣𝕨𝕚𝕝𝕝 𝔻𝕠𝕨𝕟𝕝𝕠𝕒𝕕𝕖𝕣**.\n\n"
+       await update.reply_text("Hi i am **CareerWill Extractor**.\n\n"
                               "**NOW:-** "
                                        
-                              "Press **/login** to continue..\n\n"
+                              "Press **/cw** to continue..\n\n"
                                      
-                              "Hello im txt file downloader\nPress /pyro to download links listed in a txt file in the format **Name:link**\n\n"
-                              "Bot made by **『 🅰🅸🆁 🅿🅷🅴🅾🅽🅸🆇™ 』**")
+                              "Bot made by ** 〔«𝐌𝐞𝐧𝐝𝐚𝐱™»〕**")
         
 
 ACCOUNT_ID = "6206459123001"
@@ -56,7 +55,7 @@ bc_url = (
 )
 bc_hdr = {"BCOV-POLICY": BCOV_POLICY}
 
-@bot.on_message(filters.command(["login"]))
+@bot.on_message(filters.command(["cw"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text("Send **ID & Password** in this manner otherwise bot will not respond.\n\nSend like this:-  **ID*Password**")
     url = "https://elearn.crwilladmin.com/api/v1/login-other"
